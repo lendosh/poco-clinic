@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
     </header>
     {children}
     <footer className='fixed bottom-0 pb-4'>
-        I'm footer
+        I'm a new footer
     </footer>
     </body>
     </html>
