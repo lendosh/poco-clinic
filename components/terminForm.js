@@ -1,8 +1,18 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState ,useEffect } from "react";
 
 function TerminForm() {
+
+    const [isLoaded, setIsLoaded] = useState(false);
+
+    useEffect(() => {
+        if (!isLoaded) {
+            return;
+        }
+    
+        setIsLoaded(true)
+    }, []);  
 
   const [formData, setFormData] = useState({
     firstName: "",
@@ -11,9 +21,11 @@ function TerminForm() {
     phone: "",
     date: "",
     time: "",
-    ssn: "",
+    insuranceNumber: "",
     doctor: "",
   });
+
+
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });

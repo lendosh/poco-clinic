@@ -1,5 +1,6 @@
 import React from "react";
-import TerminForm from "./TerminForm";
+import TerminForm from "@/components/terminForm";
+
 
 function TerminPage() {
   return (
