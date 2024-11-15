@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 
 function TerminForm() {
-    
+
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -22,7 +22,7 @@ function TerminForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Form Data Submitted:", formData);
-    // Burada bir API isteği gönderilebilir
+  
   };
 
   return (
