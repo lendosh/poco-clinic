@@ -2,8 +2,20 @@
 
 import React, { useState ,useEffect } from "react";
 
-function TerminForm() {
-
+/**
+ *
+ * @param doctors
+ * @model Doctor {
+ *   id        Int      @id @default(autoincrement())
+ *   email     String   @unique
+ *   firstName String
+ *   lastName  String
+ *   role      String
+ * }
+ * @returns {JSX.Element}
+ * @constructor
+ */
+export const TerminForm = (doctors) => {
     const [isLoaded, setIsLoaded] = useState(false);
 
     useEffect(() => {
@@ -34,7 +46,6 @@ function TerminForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Form Data Submitted:", formData);
-  
   };
 
   return (
@@ -145,5 +156,3 @@ function TerminForm() {
     </form>
   );
 }
-
-export default TerminForm;
