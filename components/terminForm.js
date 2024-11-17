@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState ,useEffect } from "react";
+import {createTermin} from "@/app/actions/create-termin";
 
 /**
  *
@@ -34,22 +35,20 @@ export const TerminForm = (doctors) => {
     date: "",
     time: "",
     insuranceNumber: "",
-    doctor: "",
+    doctorId: "",
   });
-
-
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Form Data Submitted:", formData);
+  const handleSubmit = async () => {
+    //TODO: should handle createTermin action
+    await createTermin(formData);
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4 p-4 border rounded-lg shadow">
+    <form action={handleSubmit} className="space-y-4 p-4 border rounded-lg shadow">
       <div>
         <label htmlFor="firstName" className="block text-sm font-medium">First Name:</label>
         <input
@@ -123,12 +122,12 @@ export const TerminForm = (doctors) => {
         />
       </div>
       <div>
-        <label htmlFor="ssn" className="block text-sm font-medium">SSN:</label>
+        <label htmlFor="insuranceNumber" className="block text-sm font-medium">Iinsurance number:</label>
         <input
           type="text"
-          id="ssn"
-          name="ssn"
-          value={formData.ssn}
+          id="insuranceNumber"
+          name="insuranceNumber"
+          value={formData.insuranceNumber}
           onChange={handleChange}
           className="w-full border p-2 rounded"
           required
@@ -137,17 +136,17 @@ export const TerminForm = (doctors) => {
       <div>
         <label htmlFor="doctor" className="block text-sm font-medium">Doctor:</label>
         <select
-          id="doctor"
-          name="doctor"
-          value={formData.doctor}
+          id="doctorId"
+          name="doctorId"
+          value={formData.doctorId}
           onChange={handleChange}
           className="w-full border p-2 rounded"
           required
         >
           <option value="">Select a doctor</option>
-          <option value="dr_smith">Dr. Smith</option>
-          <option value="dr_jones">Dr. Jones</option>
-          <option value="dr_williams">Dr. Williams</option>
+            {doctors.doctors.map((doctor) => {
+                return <option value={doctor.id} key={doctor.id}>{doctor.firstName} {doctor.lastName}</option>;
+            })}
         </select>
       </div>
       <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded">
