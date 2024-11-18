@@ -2,6 +2,9 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+=========
+import Header from "@/components/header";
+>>>>>>>>> Temporary merge branch 2
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -22,6 +25,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+    <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased h-[100vh] flex flex-col justify-center items-center`}
+    >
+      <Header/>
+      {children}
+      <Footer />
+      </body>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
