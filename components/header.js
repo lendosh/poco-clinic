@@ -4,9 +4,9 @@ import NavigationLinks from './navigation-links';
 
 const Header = () => {
     return (
-        <header className='flex justify-start items-center px-4 py-2 bg-inherit shadow-md top-0 w-full gap-x-8'>
+        <header className='fixed flex justify-between items-center px-4 py-2 bg-inherit shadow-md top-0 w-full gap-x-8'>
             <LogoImage />
-            <NavigationLinks />
+            <NavigationLinks orientation='horizontal'/>
         </header>
     );
 };
