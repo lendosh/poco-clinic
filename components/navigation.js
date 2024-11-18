@@ -1,15 +1,37 @@
 import React from 'react';
+import Link from "next/link";
 
-const Navigation = (orientation) => {
+const navLinks = [
+    {
+        name: 'Home',
+        href: '/'
+    },
+    {
+        name: 'Appointment',
+        href: '/booking'
+    },
+    {
+        name: 'About',
+        href: '/about'
+    },
+]
 
+const Navigation = (data) => {
+console.log(data);
     return (
-        <nav className= {`${orientation="horizontal" ? "flex gap-x-2":"flex flex-col gap-y-2"}`}> 
-            <a href="/">Home</a>
-            <a href="/about">About</a>
-            <a href="/booking">Appointment</a>
+        <nav className={`${data.orientation === "horizontal" ? "flex gap-x-2" : "flex flex-col gap-y-2"}`}>
+            {navLinks.map(link => {
+                return (
+                    <Link
+                        key={link.name}
+                        href={link.href}
+                    >
+                        {link.name}
+                    </Link>
+                )
+            })}
         </nav>
     );
 };
 
 export default Navigation;
-
