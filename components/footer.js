@@ -4,7 +4,7 @@ import Navigation from "@/components/navigation";
 
 const Footer = () => {
     return (
-        <footer className='bg-slate-300 text-gray-800 flex space-x-2 fixed bottom-0 w-full p-4 text-left'>
+        <footer className='bg-slate-100 text-gray-800 flex space-x-2 fixed bottom-0 w-full p-4 text-left'>
             <section className='basis-1/3 flex-col align-bottom space-y-1.5 p-1'>
                 <p className='text-xl font-semibold pb-2'><span className='text-red-700'>&#123;</span>POWER<span className='text-red-700'>.</span>CODERS<span className='text-red-700'>&#125;</span></p>
                 <ul>
@@ -14,7 +14,7 @@ const Footer = () => {
                 </ul>
             </section>
             <section className='basis-1/3'>
-                <p className='font-semibold py-2'>Useful Links</p>
+                <p className='font-semibold py-2 text-xl'>Useful Links</p>
                 <Navigation/>
             </section>
             <section className='basis-1/3 flex-col mt-auto'>

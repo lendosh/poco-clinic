@@ -23,6 +23,7 @@ console.log(data);
             {navLinks.map(link => {
                 return (
                     <Link
+                        className='text-swans-down-500 font-bold'
                         key={link.name}
                         href={link.href}
                     >
