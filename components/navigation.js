@@ -1,37 +1,12 @@
 import React from 'react';
-import Link from "next/link";
+import NavigationLinks from './navigation-links';
 
-const navLinks = [
-    {
-        name: 'Home',
-        href: '/'
-    },
-    {
-        name: 'Appointment',
-        href: '/booking'
-    },
-    {
-        name: 'About',
-        href: '/about'
-    },
-]
-
-const Navigation = (data) => {
-console.log(data);
+const Navigation = () => {
     return (
-        <nav className={`${data.orientation === "horizontal" ? "flex gap-x-2" : "flex flex-col gap-y-2"}`}>
-            {navLinks.map(link => {
-                return (
-                    <Link
-                        className='text-swans-down-500 font-bold'
-                        key={link.name}
-                        href={link.href}
-                    >
-                        {link.name}
-                    </Link>
-                )
-            })}
-        </nav>
+        <section className='basis-1/3 whitespace-nowrap'>
+            <p className='font-semibold py-2 text-xl w-full'>Useful Links</p>
+            <NavigationLinks/>
+        </section>
     );
 };
 
