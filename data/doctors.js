@@ -19,7 +19,7 @@ export const doctorsList = [
     },
     {
         id: 3,
-        imageUrl: null,
+        imageUrl: "/mustafa.jfif",
         name: "Mustafa Zengin",
         specialization: "Neurosurgeon",
         experience: "13 years",
@@ -28,7 +28,7 @@ export const doctorsList = [
     },
     {
         id: 4,
-        imageUrl: null,
+        imageUrl: "/tunçay.jpg",
         name: "Tunçay Kaya",
         specialization: "Endocrinologist",
         experience: "13 years",
