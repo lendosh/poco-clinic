@@ -1,10 +1,18 @@
-import Gallery from '@/components/gallery';
 import React from 'react';
+import DoctorCards from '@/components/doctorCards';
 
 const Layout = () => {
     return (
         <div>
-            <Gallery/>
+            <h1 className='
+            text-4xl 
+            text-center
+            text-swans-down-900
+            font-bold
+            pb-6'>
+                Our Doctors
+            </h1>
+            <DoctorCards/>
         </div>
     );
 };
