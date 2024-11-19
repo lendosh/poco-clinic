@@ -1,5 +1,5 @@
 import React from 'react';
-import DoctorCards from '@/components/doctorCards';
+import DoctorCardsList from '@/components/doctor-cards-list';
 
 const Layout = () => {
     return (
@@ -12,7 +12,7 @@ const Layout = () => {
             pb-6'>
                 Our Doctors
             </h1>
-            <DoctorCards/>
+            <DoctorCardsList/>
         </div>
     );
 };

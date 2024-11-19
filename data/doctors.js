@@ -1,7 +1,7 @@
-export const Doctors = [
+export const doctorsList = [
     {
         id: 1,
-        imageUrl: "/public/vlad.jpg",
+        imageUrl: "/vlad.jpg",
         name: "Vladyslav Pomazanov",
         specialization: "Chief Medical Officer, Cardiologist",
         experience: "13 years",
@@ -10,7 +10,7 @@ export const Doctors = [
     },
     {
         id: 2,
-        imageUrl: "/public/tetiana.jpg",
+        imageUrl: "/tetiana.jpg",
         name: "Tetiana Konstantinova",
         specialization: "Gastroenterologist",
         experience: "13 years",
@@ -19,7 +19,7 @@ export const Doctors = [
     },
     {
         id: 3,
-        imageUrl: "null",
+        imageUrl: null,
         name: "Mustafa Zengin",
         specialization: "Neurosurgeon",
         experience: "13 years",
@@ -28,7 +28,7 @@ export const Doctors = [
     },
     {
         id: 4,
-        imageUrl: "null",
+        imageUrl: null,
         name: "Tunçay Kaya",
         specialization: "Endocrinologist",
         experience: "13 years",
