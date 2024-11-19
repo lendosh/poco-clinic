@@ -10,7 +10,7 @@ const Footer = () => {
             text-gray-800 
             flex space-x-2 
             fixed bottom-0 w-full 
-            p-4 text-left
+            py-4 px-32 text-left
             justify-between items-center'
         >
             <section className='flex gap-x-32'>
