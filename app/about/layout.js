@@ -1,9 +1,10 @@
+import Gallery from '@/components/gallery';
 import React from 'react';
 
 const Layout = () => {
     return (
         <div>
-            About layout
+            <Gallery/>
         </div>
     );
 };
