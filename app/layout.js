@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
         className={`
         ${geistSans.variable} ${geistMono.variable} 
         antialiased h-[100vh] 
-        flex flex-col 
+        flex flex-col
         justify-center 
         items-center
         `}
