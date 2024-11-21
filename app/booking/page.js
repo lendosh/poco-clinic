@@ -16,7 +16,7 @@ const TerminPage = async () => {
                 {/* Info Text */}
                 <div className="flex-1 text-center md:text-left">
                
-                    <p className="mb-4">We're here to assist you! Whether you're seeking medical advice, have questions about our services, or need assistance with booking an appointment, our dedicated team is here to ensure you have the best experience at POCO-Clinic.</p>
+                    <p className="mb-4">We are here to assist you! Whether you are seeking medical advice, have questions about our services, or need assistance with booking an appointment, our dedicated team is here to ensure you have the best experience at POCO-Clinic.</p>
 
                     <br></br>
 

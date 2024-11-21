@@ -25,7 +25,7 @@ export const TerminForm = (doctors) => {
         }
     
         setIsLoaded(true)
-    }, []);  
+    }, [isLoaded]);  
 
   const [formData, setFormData] = useState({
     firstName: "",
