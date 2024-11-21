@@ -10,7 +10,7 @@ const TerminPage = async () => {
     return (
         <div className="container mx-auto p-4">
             <h1 className="text-2xl font-bold mb-4">Book Your Appointment</h1>
-            <div class="info-section" className="alex" >
+            <div  className="alex" >
                 <h2>How to Schedule an Appointment</h2>
                 <ol>
                     <li><strong>Fill in Your Personal Information:</strong> Enter your <em>First Name</em> and <em>Last Name</em>.</li>
