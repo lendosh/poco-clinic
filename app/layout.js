@@ -29,7 +29,6 @@ export default function RootLayout({ children }) {
         flex flex-col
         justify-center 
         items-center
-        px-32
         `}
     >
       <Header/>
