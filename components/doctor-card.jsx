@@ -64,7 +64,7 @@ const DoctorCard = (data) => {
                     <div
                         className="
                                     bg-swans-down-600 rounded-md
-                                    px-3 py-1 ml-2
+                                    px-3 py-1 ml-3
                                     text-2xl
                                     transition
                                     delay-75
