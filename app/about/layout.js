@@ -9,7 +9,7 @@ const Layout = () => {
                             text-center
                             text-swans-down-900
                             font-bold
-                            pb-6'>
+                            pb-6 mb-6 mt-60'>
                 Our Doctors
             </h1>
             <DoctorCardsList/>
