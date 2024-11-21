@@ -3,7 +3,7 @@ import DoctorCardsList from '@/components/doctor-cards-list';
 
 const AboutPage = () => {
     return (
-        <div>
+        <section>
             <h1 className='
                             text-4xl 
                             text-center
@@ -13,7 +13,7 @@ const AboutPage = () => {
                 Our Doctors
             </h1>
             <DoctorCardsList/>
-        </div>
+        </section>
     );
 };
 
