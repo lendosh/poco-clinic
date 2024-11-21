@@ -57,6 +57,7 @@ export const TerminForm = (doctors) => {
           name="firstName"
           value={formData.firstName}
           onChange={handleChange}
+          placeholder="Enter your first name"
           className="w-full border p-2 rounded"
           required
         />
@@ -69,6 +70,7 @@ export const TerminForm = (doctors) => {
           name="lastName"
           value={formData.lastName}
           onChange={handleChange}
+          placeholder="Enter your last name"
           className="w-full border p-2 rounded"
           required
         />
@@ -81,6 +83,7 @@ export const TerminForm = (doctors) => {
           name="email"
           value={formData.email}
           onChange={handleChange}
+          placeholder="example@example.com"
           className="w-full border p-2 rounded"
           required
         />
@@ -93,6 +96,7 @@ export const TerminForm = (doctors) => {
           name="phone"
           value={formData.phone}
           onChange={handleChange}
+          placeholder="+123456789"
           className="w-full border p-2 rounded"
           required
         />
@@ -105,6 +109,7 @@ export const TerminForm = (doctors) => {
           name="date"
           value={formData.date}
           onChange={handleChange}
+          placeholder="Select a date"
           className="w-full border p-2 rounded"
           required
         />
@@ -117,18 +122,20 @@ export const TerminForm = (doctors) => {
           name="time"
           value={formData.time}
           onChange={handleChange}
+          placeholder="Select a time"
           className="w-full border p-2 rounded"
           required
         />
       </div>
       <div>
-        <label htmlFor="insuranceNumber" className="block text-sm font-medium">Iinsurance number:</label>
+        <label htmlFor="insuranceNumber" className="block text-sm font-medium">Insurance Number:</label>
         <input
           type="text"
           id="insuranceNumber"
           name="insuranceNumber"
           value={formData.insuranceNumber}
           onChange={handleChange}
+          placeholder="Enter your insurance number"
           className="w-full border p-2 rounded"
           required
         />
@@ -144,9 +151,9 @@ export const TerminForm = (doctors) => {
           required
         >
           <option value="">Select a doctor</option>
-            {doctors.doctors.map((doctor) => {
-                return <option value={doctor.id} key={doctor.id}>{doctor.firstName} {doctor.lastName}</option>;
-            })}
+          {doctors.doctors.map((doctor) => {
+            return <option value={doctor.id} key={doctor.id}>{doctor.firstName} {doctor.lastName}</option>;
+          })}
         </select>
       </div>
       <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded">
