@@ -1,7 +1,7 @@
 import React from 'react';
 import DoctorCardsList from '@/components/doctor-cards-list';
 
-const Layout = () => {
+const AboutPage = () => {
     return (
         <div>
             <h1 className='
@@ -9,7 +9,7 @@ const Layout = () => {
                             text-center
                             text-swans-down-900
                             font-bold
-                            pb-6 mb-6 mt-60'>
+                            pb-12'>
                 Our Doctors
             </h1>
             <DoctorCardsList/>
@@ -17,4 +17,4 @@ const Layout = () => {
     );
 };
 
-export default Layout;
+export default AboutPage;

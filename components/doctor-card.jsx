@@ -8,7 +8,7 @@ import {MailIcon, CalendarDays} from "lucide-react";
 const DoctorCard = (data) => {
     const {doctor} = data;
     return (
-        <div
+        <section
             className="
                         bg-swans-down-200
                         rounded-2xl
@@ -52,13 +52,9 @@ const DoctorCard = (data) => {
                                         hover:cursor-pointer
                                     "
                         >
-
-                            <MailIcon className='h-6 w-6 text-white'>
-                                <Link
-                                    href={`mailto:${doctor.email}`}
-                                    title={`Email to ${doctor.name}`}
-                                />
-                            </MailIcon>
+                            <Link href={`mailto:${doctor.email}`} title={`Email to ${doctor.name}`}>
+                                <MailIcon className='h-6 w-6 text-white'/>
+                            </Link>
                         </div>
                     )}
                     <div
@@ -73,16 +69,13 @@ const DoctorCard = (data) => {
                                     hover:cursor-pointer
                                 "
                     >
-                        <CalendarDays className='h-6 w-6 text-white'>
-                        <Link
-                                href="/booking"
-                                title="Book an appointment"
-                            />
-                        </CalendarDays>
+                        <Link href={`/booking`} title={`Book an appointment`}>
+                            <CalendarDays className='h-6 w-6 text-white'/>
+                        </Link>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 
