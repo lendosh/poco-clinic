@@ -47,6 +47,20 @@ export const TerminForm = (doctors) => {
     await createTermin(formData);
   };
 
+  const generateTimeOptions = () => {
+    const times = [];
+    for (let hour = 0; hour < 24; hour++) {
+      for (let minute = 0; minute < 60; minute += 15) {
+        const formattedHour = hour.toString().padStart(2, "0");
+        const formattedMinute = minute.toString().padStart(2, "0");
+        times.push(`${formattedHour}:${formattedMinute}`);
+      }
+    }
+    return times;
+  };
+
+
+
   return (
     <form action={handleSubmit} className="space-y-4 p-4 border rounded-lg shadow">
       <div>
@@ -109,17 +123,25 @@ export const TerminForm = (doctors) => {
           required
         />
       </div>
-      <div>
-        <label htmlFor="time" className="block text-sm font-medium">Time:</label>
-        <input
-          type="time"
+       <div>
+        <label htmlFor="time" className="block text-sm font-medium">
+          Time:
+        </label>
+        <select
           id="time"
           name="time"
           value={formData.time}
           onChange={handleChange}
           className="w-full border p-2 rounded"
           required
-        />
+        >
+          <option value="">Select a time</option>
+          {generateTimeOptions().map((time) => (
+            <option value={time} key={time}>
+              {time}
+            </option>
+          ))}
+        </select>
       </div>
       <div>
         <label htmlFor="insuranceNumber" className="block text-sm font-medium">Iinsurance number:</label>
