@@ -1,6 +1,7 @@
 import React from 'react';
 import LogoImage from './logo';
 import NavigationLinks from './navigation-links';
+import LoginArea from './login';
 
 const Header = () => {
     return (
@@ -20,6 +21,7 @@ const Header = () => {
         '>
             <LogoImage/>
             <NavigationLinks orientation='horizontal'/>
+            <LoginArea />
         </header>
     );
 };
