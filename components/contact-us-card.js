@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Link from "next/link";
+import Button from "next/link";
 import {MailIcon, CalendarDays} from "lucide-react";
 import {contactItems} from '@/data/contact-items';
 
@@ -23,22 +23,24 @@ const ContactCard = (data) => {
                     {contactItem.name}
                 </h3>
                 <p className="text-xl font-bold pb-2">{contactItem.boldtext}</p>
-                <p>{contactItem.text}</p>
+                <p className='mb-4'>{contactItem.text}</p>
 
-                <div className='mt-4'>
-                    <Link className="hover:no-underline bg-swans-down-600 rounded-md
+                <div className='mt-auto my-4'>
+                    <Button className="hover:no-underline bg-swans-down-600 rounded-md
                                 px-4 py-2
                                 text-lg
                                 transition
                                 delay-75
                                 hover:bg-swans-down-800
                                 hover:cursor-pointer
-                                text-white inline" 
+                                text-white inline
+                                " 
                             href={contactItem.href} 
                             title={contactItem.title}
+                            target="_blank"
                     >
                         {contactItem.linktext}
-                    </Link>
+                    </Button>
                 </div>
             </div>
         </section>
