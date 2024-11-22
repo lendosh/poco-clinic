@@ -1,8 +1,6 @@
 import React from 'react';
 
 import Button from "next/link";
-import {MailIcon, CalendarDays} from "lucide-react";
-import {contactItems} from '@/data/contact-items';
 
 const ContactCard = (data) => {
     const {contactItem} = data;
@@ -12,9 +10,8 @@ const ContactCard = (data) => {
                         bg-swans-down-200
                         text-center
                         rounded-2xl
-                        p-6 pb-4
+                        p-2 md:p-6 pb-2 md:pb-4
                         flex gap-x-8
-                        
                         w-full
                     "
         >
@@ -24,9 +21,10 @@ const ContactCard = (data) => {
                 </h3>
                 <p className="text-xl font-bold pb-2">{contactItem.boldtext}</p>
                 <p className='mb-4'>{contactItem.text}</p>
-
-                <div className='mt-auto my-4'>
-                    <Button className="hover:no-underline bg-swans-down-600 rounded-md
+                <Button
+                    className="
+                                mt-auto my-4
+                                hover:no-underline bg-swans-down-600 rounded-md
                                 px-4 py-2
                                 text-lg
                                 transition
@@ -34,14 +32,13 @@ const ContactCard = (data) => {
                                 hover:bg-swans-down-800
                                 hover:cursor-pointer
                                 text-white inline
-                                " 
-                            href={contactItem.href} 
-                            title={contactItem.title}
-                            target="_blank"
-                    >
-                        {contactItem.linktext}
-                    </Button>
-                </div>
+                    "
+                    href={contactItem.href}
+                    title={contactItem.title}
+                    target="_blank"
+                >
+                    {contactItem.linktext}
+                </Button>
             </div>
         </section>
     );
