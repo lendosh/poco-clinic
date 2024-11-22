@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from "next/link";
 import {CalendarDays} from "lucide-react";
 
 
@@ -13,7 +14,11 @@ const EmergencyClinic = () => {
                                 pb-8'>
                     Emergency
             </h1>
-            <p>Call us <a href="tel:+41791234567" className='font-bold'>+41 (79) 123-45-67</a> or <span className='font-bold'>come by directly!</span></p>
+            <p>Call us
+                <Link href="tel:+41791234567" className='font-bold text-swans-down-500 mx-1'>
+                    +41 (79) 123-45-67
+                </Link>
+            or <span className='font-bold'>come by directly!</span></p>
 
             <p>We are a walk-in practice. This means that you can <span className='font-bold'>come to us</span> with any health problem or emergency, <span className='font-bold'>even in a non-urgent case,</span> without having to make an appointment by phone.</p>
 
