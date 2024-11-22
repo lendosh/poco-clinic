@@ -4,7 +4,7 @@ import {CalendarDays} from "lucide-react";
 
 const EmergencyClinic = () => {
     return (
-        <section className='text-center text-swans-down-950 mb-14'>
+        <section className='text-center text-swans-down-950 pt-96'>
             <h1 className='
                                 text-5xl 
                                 uppercase
@@ -21,7 +21,7 @@ const EmergencyClinic = () => {
 
             <a className="
                         bg-swans-down-600 rounded-md
-                        px-4 py-2 mt-6
+                        px-4 py-2 my-6
                         text-xl
                         transition
                         delay-75

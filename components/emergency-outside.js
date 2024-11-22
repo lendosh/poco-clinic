@@ -8,7 +8,7 @@ const EmergencyOutside = () => {
                                 text-4xl 
                                 uppercase
                                 font-bold
-                                pb-8'>
+                                py-8'>
                         Outside our working hours
                 </h1>
                 <p>Please contact the following offices <span className='font-bold'>outside of our opening hours:</span></p>

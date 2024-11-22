@@ -5,7 +5,7 @@ import React from 'react';
 
 const EmergencyPage = () => {
     return (
-        <section className='w-3/5 leading-7'>
+        <section className='w-1/2 leading-7'>
             <EmergencyClinic/>
             <EmergencyOutside/>
         </section>
