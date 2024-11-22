@@ -14,6 +14,14 @@ const navLinks = [
         name: 'About',
         href: '/about'
     },
+    {
+        name: 'Contact Us',
+        href: '/contact-us'
+    },
+    {
+        name: 'Emergency',
+        href: '/emergency'
+    }
 ]
 
 const NavigationLinks = (data) => {
