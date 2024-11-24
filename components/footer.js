@@ -19,11 +19,11 @@ const Footer = () => {
             [box-shadow:0_-4px_6px_-1px_rgba(0,0,0,0.1),0_-2px_4px_-1px_rgba(0,0,0,0.06)]'
         >
             <section className='flex gap-x-32'>
-                <Contacts />
-                <Navigation />
+                <Contacts/>
+                <Navigation/>
             </section>
-            <SocialLinks />
-      </footer>
+            <SocialLinks/>
+        </footer>
     );
 };
 

@@ -5,7 +5,7 @@ export default function Home() {
     <main className="
                   flex-1 
                   justify-center 
-                  items-center pt-40">
+                  items-center pt-12">
     <HealthCareList />
     </main>
   );

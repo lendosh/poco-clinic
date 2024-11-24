@@ -3,7 +3,7 @@ import ContactCardsList from '@/components/contact-us-cards-list';
 
 const ContactUsPage = () => {
     return (
-        <section className='w-[95%] md:w-[85%] xl:w-3/4'>
+        <main>
             <h1 className='
                             text-4xl 
                             text-center
@@ -14,7 +14,7 @@ const ContactUsPage = () => {
                 Contact Us
             </h1>
             <ContactCardsList/>
-        </section>
+        </main>
     );
 };
 

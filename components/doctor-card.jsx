@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import {MailIcon, CalendarDays} from "lucide-react";
+import {Button} from "@/components/ui/button";
 
 const DoctorCard = (data) => {
     const {doctor} = data;
@@ -38,41 +39,19 @@ const DoctorCard = (data) => {
                 </p>
                 <p>Experience: {doctor.experience}</p>
                 <p className="mb-4">Education: {doctor.education}</p>
-                <div className='mt-auto ml-auto flex items-center justify-center'>
+                <div className='mt-auto ml-auto flex gap-x-2 items-center justify-center'>
                     {doctor.email && (
-                        <div
-                            className="
-                                        bg-swans-down-600 rounded-md
-                                        px-3 py-1
-                                        text-2xl
-                                        transition
-                                        delay-75
-                                        hover:bg-swans-down-800
-                                        hover:no-underline
-                                        hover:cursor-pointer
-                                    "
-                        >
+                        <Button>
                             <Link href={`mailto:${doctor.email}`} title={`Email to ${doctor.name}`}>
                                 <MailIcon className='h-6 w-6 text-white'/>
                             </Link>
-                        </div>
+                        </Button>
                     )}
-                    <div
-                        className="
-                                    bg-swans-down-600 rounded-md
-                                    px-3 py-1 ml-3
-                                    text-2xl
-                                    transition
-                                    delay-75
-                                    hover:bg-swans-down-800
-                                    hover:no-underline
-                                    hover:cursor-pointer
-                                "
-                    >
+                    <Button>
                         <Link href={`/booking`} title={`Book an appointment`}>
                             <CalendarDays className='h-6 w-6 text-white'/>
                         </Link>
-                    </div>
+                    </Button>
                 </div>
             </div>
         </section>
