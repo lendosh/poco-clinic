@@ -6,7 +6,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 a:hover {
-  text-decoration: underline dotted;
+  text-decoration: underline;
 }
 @layer base {
   :root {
