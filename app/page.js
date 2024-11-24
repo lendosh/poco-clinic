@@ -1,4 +1,4 @@
-import HealthCareCard from "@/components/health-care-card";
+import HealthCareList from "@/components/health-care-list";
 
 export default function Home() {
   return (
@@ -6,7 +6,7 @@ export default function Home() {
                   flex-1 
                   justify-center 
                   items-center pt-40">
-    <HealthCareCard imageSource={'1_health.avif'} description={'Hello everybody'} />
+    <HealthCareList />
     </main>
   );
 }
