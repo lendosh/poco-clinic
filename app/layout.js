@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
         `}
     >
       <Header/>
-      <div className='pt-28 h-full w-full'>
+      <div className='pt-28 h-full w-full px-20'>
         {children}
       </div>
       <Footer />

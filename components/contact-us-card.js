@@ -1,6 +1,5 @@
 import React from 'react';
-
-import Button from "next/link";
+import {Button} from "@/components/ui/button";
 
 const ContactCard = (data) => {
     const {contactItem} = data;
@@ -22,17 +21,8 @@ const ContactCard = (data) => {
                 <p className="text-xl font-bold pb-2">{contactItem.boldtext}</p>
                 <p className='mb-4'>{contactItem.text}</p>
                 <Button
-                    className="
-                                mt-auto my-4
-                                hover:no-underline bg-swans-down-600 rounded-md
-                                px-4 py-2
-                                text-lg
-                                transition
-                                delay-75
-                                hover:bg-swans-down-800
-                                hover:cursor-pointer
-                                text-white inline
-                    "
+                    className='mt-auto'
+                    variand='default'
                     href={contactItem.href}
                     title={contactItem.title}
                     target="_blank"
