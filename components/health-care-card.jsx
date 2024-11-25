@@ -13,7 +13,7 @@ const HealthCareCard = (data) => {
         <Card
             className={`
             card-shadow w-[304px] 
-            h-384 rounded-2xl p-2 bg-cover bg-center relative overflow-hidden    
+            rounded-2xl p-2 bg-cover bg-center relative overflow-hidden    
             hover:cursor-pointer       
             `}
             style={{backgroundImage: `url("${program.imageUrl}")`}}
