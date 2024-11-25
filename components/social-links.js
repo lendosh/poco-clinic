@@ -26,7 +26,7 @@ const SocialLinks = () => {
                     </div>
                 </a>
             </div>
-            <p className='mt-4'>© 2024 <strong><span className='text-red-700'>&#123;</span>POWER<span className='text-red-700'>.</span>CODERS<span className='text-red-700'>&#125;</span></strong>. All Rights Reserved</p>
+            <p className='pt-3 text-md'>© 2024 <strong><span className='text-red-700'>&#123;</span>POWER<span className='text-red-700'>.</span>CODERS<span className='text-red-700'>&#125;</span></strong>. All Rights Reserved</p>
         </section>
     );
 };
