@@ -9,7 +9,6 @@ const AboutPage = () => {
                             text-center
                             text-swans-down-900
                             font-bold
-
                             '>
                 Our Doctors
             </h1>
