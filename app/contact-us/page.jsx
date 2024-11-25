@@ -3,13 +3,12 @@ import ContactCardsList from '@/components/contact-us-cards-list';
 
 const ContactUsPage = () => {
     return (
-        <main>
+        <main className='flex flex-col w-full gap-y-2 items-center pt-12'>
             <h1 className='
-                            text-4xl 
+                            text-4xl
                             text-center
                             text-swans-down-950
                             font-bold
-                            pt-20 py-12
                             '>
                 Contact Us
             </h1>

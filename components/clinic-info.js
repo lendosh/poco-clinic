@@ -1,29 +1,36 @@
 import React from 'react';
 import LogoImage from './logo';
+import {Card, CardContent} from "@/components/ui/card";
+
+const welcomeText = 'We deliver innovative, compassionate care, blending advanced technology with a patient-first\n' +
+    '                        approach.'
 
 const ClinicInfo = () => {
     return (
-        <section
+        <Card
             className='
-                        bg-[url("/main-page-img.webp")] 
-                        w-3/4 h-96
-                        mb-10
-                        card-shadow rounded-2xl p-4 bg-center relative overflow-hidden   
-                    '>
+            card-shadow w-full
+            rounded-2xl p-2 bg-cover bg-center relative overflow-hidden
+            hover:cursor-pointer
+            '
+            style={{backgroundImage: `url("/main-page-img.webp")`}}
 
-            <article className='flex'>
+        >
+            <CardContent className='flex h-96'>
                 <div
-                    className="text-white border-swans-down-600 bg-swans-down-800 bg-opacity-80 rounded-md
+                    className="
+                    w-full mt-auto text-white border-swans-down-600
+                    bg-swans-down-800 bg-opacity-90 rounded-md
                     text-3xl font-semibold
                     "
                 >
-                    <LogoImage />
-                    <p className="p-2">
-                    We deliver innovative, compassionate care, blending advanced technology with a patient-first approach.
+                    <LogoImage width={100} height={100} textSize={'large'}/>
+                    <p className="h-full p-2">
+                        {welcomeText}
                     </p>
                 </div>
-            </article>
-        </section>
+            </CardContent>
+        </Card>
     );
 };
 
