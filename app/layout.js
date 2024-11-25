@@ -24,21 +24,17 @@ export default function RootLayout({children}) {
         <html lang="en">
         <body
             className={`
-        ${geistSans.variable} ${geistMono.variable} 
-        flex-1
-        antialiased 
-        h-full
-        flex flex-col
-        justify-center 
-        items-center
-        gap-y-8
-        
-        min-h-screen
-        `}
+                ${geistSans.variable} ${geistMono.variable} 
+                antialiased 
+                flex flex-col
+                min-h-screen
+            `}
         >
 
         <Header/>
-        {children}
+        <div className="flex-1 w-full flex flex-col justify-center items-center gap-y-8">
+            {children}
+        </div>
         <Footer/>
 
         </body>
