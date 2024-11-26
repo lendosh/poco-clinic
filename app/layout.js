@@ -32,7 +32,7 @@ export default function RootLayout({children}) {
         >
 
         <Header/>
-        <div className="flex-1 w-full flex flex-col justify-center items-center gap-y-8">
+        <div className="flex-1 w-full flex flex-col justify-center items-center gap-y-8 pt-8">
             {children}
         </div>
         <Footer/>

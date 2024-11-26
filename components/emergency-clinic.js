@@ -11,7 +11,7 @@ const EmergencyClinic = () => {
     const router = useRouter();
 
     return (
-        <section className='text-center text-swans-down-950 flex flex-col gap-y-8 items-center'>
+        <section className='text-center text-swans-down-950 flex flex-col gap-y-6 items-center w-2/5 mx-auto'>
             <h1 className='text-5xl uppercase text-red-600 font-bold'>
                     Emergency
             </h1>
@@ -20,13 +20,13 @@ const EmergencyClinic = () => {
                     +41 (79) 123-45-67
                 </Link>
             or
-                <span className='font-bold'>come by directly!</span>
+                <span className='font-bold'> come by directly!</span>
             </p>
 
             <p>We are a walk-in practice. This means that you can
-                <span className='font-bold'>come to us</span>
+                <span className='font-bold'> come to us</span>
                 with any health problem or emergency,
-                <span className='font-bold'>even in a non-urgent case,</span>
+                <span className='font-bold'> even in a non-urgent case, </span>
                 without having to make an appointment by phone.
             </p>
 

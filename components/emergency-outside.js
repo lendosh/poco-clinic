@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const EmergencyOutside = () => {
     return (
-        <section className='text-center text-swans-down-950'>
+        <section className='text-center text-swans-down-950 gap-y-6'>
                 <h1 className='
                                 text-4xl 
                                 uppercase
@@ -11,7 +11,7 @@ const EmergencyOutside = () => {
                                 py-8'>
                         Outside our working hours
                 </h1>
-                <p>Please contact the following offices <span className='font-bold'>outside of our opening hours:</span></p>
+                <p className='pb-6'>Please contact the following offices <span className='font-bold'>outside of our opening hours:</span></p>
                 <ul>
                     <li>In a life-threatening emergency: <span className='font-bold'>Ambulance</span> <Link href="tel:1414" className='font-bold text-swans-down-500'>144</Link></li>
                     <li>In a non-life-threatening emergency:

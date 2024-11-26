@@ -12,7 +12,7 @@ const Footer = () => {
             space-x-2 
             py-4
             px-32
-            mt-16
+            mt-8
             justify-between 
             items-center
             w-full
