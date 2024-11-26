@@ -2,19 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from "next/link";
 
-const LogoImage = (data) => {
-    let {width, height, textSize} = data;
-    if (!width) {
-        width = 50;
-    }
-
-    if (!height) {
-        height = 50;
-    }
-
-    if (!textSize) {
-        textSize = 'text-xl'
-    }
+const LogoImage = ({width = 50, height = 50, textSize = 'text-xl'}) => {
 
     if (textSize === 'large') {
         textSize = 'text-3xl'
