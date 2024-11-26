@@ -19,7 +19,7 @@ export const doctorsList = [
     },
     {
         id: 3,
-        imageUrl: "/mustafa.jfif",
+        imageUrl: "/mustafa.jpg",
         name: "Mustafa Zengin",
         specialization: "Neurosurgeon",
         experience: "13 years",
