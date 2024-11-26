@@ -54,8 +54,8 @@ export const NewPasswordForm = () => {
 
   return (
       <CardWrapper
-          mainHeaderLabel="Вкажіть новий пароль"
-          backButtonLabel="Повернутися до логіну"
+          mainHeaderLabel="Enter new password"
+          backButtonLabel="Back to login"
           backButtonHref="/auth/login"
       >
         <Form {...form}>
@@ -92,7 +92,7 @@ export const NewPasswordForm = () => {
                 className="w-full"
                 disabled={isPending}
             >
-              Змінити пароль
+              Change the password
             </Button>
           </form>
         </Form>
