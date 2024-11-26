@@ -3,14 +3,14 @@ import DoctorCardsList from '@/components/doctor-cards-list';
 
 const AboutPage = () => {
     return (
-        <main>
+        <main className='flex flex-col w-full gap-y-2 items-center'>
             <h1 className='
                             text-4xl 
                             text-center
                             text-swans-down-900
                             font-bold
-                            pb-12
-                            pt-60'>
+                            pb-6
+                            '>
                 Our Doctors
             </h1>
             <DoctorCardsList/>

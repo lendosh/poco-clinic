@@ -2,7 +2,12 @@ import React from 'react';
 import Image from 'next/image';
 import Link from "next/link";
 
-const LogoImage = () => {
+const LogoImage = ({width = 50, height = 50, textSize = 'text-xl'}) => {
+
+    if (textSize === 'large') {
+        textSize = 'text-3xl'
+    }
+
     return (
         <Link
             href='/'
@@ -10,11 +15,11 @@ const LogoImage = () => {
         >
             <Image  className="rounded-full flex items-center space-x-2"  
                     src="/clinic-logo.svg"
-                    width={50}
-                    height={50}
+                    width={width}
+                    height={height}
                     alt="Logo"
             />
-            <p className='font-bold text-xl font-serif'>POCO-Clinic</p>
+            <p className={`font-bold ${textSize} font-serif`}>POCO-Clinic</p>
         </Link>
     );
 };

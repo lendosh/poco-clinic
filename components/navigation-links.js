@@ -1,24 +1,27 @@
 import React from 'react';
 import Link from "next/link";
 
-const navLinks = [
-    {
-        name: 'Home',
-        href: '/'
+const navLinks = [{
+        name: 'Emergency',
+        href: '/emergency'
     },
     {
-        name: 'Appointment',
+        name: 'Booking',
         href: '/booking'
     },
     {
-        name: 'About',
+        name: 'About Us',
         href: '/about'
+    },
+    {
+        name: 'Contact Us',
+        href: '/contact-us'
     },
 ]
 
 const NavigationLinks = (data) => {
     return (
-        <nav className={`${data.orientation === "horizontal" ? "flex gap-x-2" : "flex flex-col gap-y-2"}`}>
+        <nav className={`${data.orientation === "horizontal" ? "flex gap-x-8" : "flex flex-col gap-y-1"}`}>
             {navLinks.map(link => {
                 return (
                     <Link
