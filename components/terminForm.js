@@ -346,8 +346,6 @@ export const TerminForm = ({ doctors }) => {
         />
       </div>
 
-      
-
       {/* Submit Button */}
       <div className="flex justify-between">
         <button
