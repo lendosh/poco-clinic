@@ -3,7 +3,7 @@ import { Facebook, Youtube, Instagram, Linkedin } from 'lucide-react';
 
 const SocialLinks = () => {
     return (
-        <section className='flex-col mt-auto'>
+        <section className='flex-col mb-auto md:mt-auto'>
             <div className='flex gap-1'>
                 <a href='https://facebook.com' target='_blank'>
                     <div className='rounded-full bg-blue-600 flex hover:bg-blue-400/80 justify-center items-center h-8 w-8 p-2'>
@@ -26,7 +26,7 @@ const SocialLinks = () => {
                     </div>
                 </a>
             </div>
-            <p className='pt-3 text-md'>© 2024 <strong><span className='text-red-700'>&#123;</span>POWER<span className='text-red-700'>.</span>CODERS<span className='text-red-700'>&#125;</span></strong>. All Rights Reserved</p>
+            <p className='pt-3 text-xs md:text-md'>© 2024 <strong><span className='text-red-700'>&#123;</span>POWER<span className='text-red-700'>.</span>CODERS<span className='text-red-700'>&#125;</span></strong>. All Rights Reserved</p>
         </section>
     );
 };

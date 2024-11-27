@@ -21,7 +21,7 @@ const navLinks = [{
 
 const NavigationLinks = (data) => {
     return (
-        <nav className={`${data.orientation === "horizontal" ? "flex gap-x-8" : "flex flex-col gap-y-1"}`}>
+        <nav className={` hidden md:flex ${data.orientation === "horizontal" ? "gap-x-8" : "flex-col gap-y-1"}`}>
             {navLinks.map(link => {
                 return (
                     <Link

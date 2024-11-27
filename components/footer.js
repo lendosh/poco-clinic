@@ -9,16 +9,18 @@ const Footer = () => {
             flex
             bg-inherit
             text-swans-down-800 
-            space-x-2 
+            space-x-4
             py-4
-            px-32
+            px-2
+            md:px-16
+            lg:px-32
             mt-8
             justify-between 
             items-center
             w-full
             [box-shadow:0_-4px_6px_-1px_rgba(0,0,0,0.1),0_-2px_4px_-1px_rgba(0,0,0,0.06)]'
         >
-            <section className='flex gap-x-32'>
+            <section className='flex flex-col md:flex-row justify-around max-w-[50%] w-full'>
                 <Contacts/>
                 <Navigation/>
             </section>
