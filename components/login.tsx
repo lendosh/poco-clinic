@@ -18,11 +18,11 @@ const LoginArea = () => {
                     Sign up
                 </Button>
             </RegisterButton>
-            <LogoutButton>
-                <Button variant='destructive' size='sm'>
-                    Logout
-                </Button>
-            </LogoutButton>
+            {/*<LogoutButton>*/}
+            {/*    <Button variant='destructive' size='sm'>*/}
+            {/*        Logout*/}
+            {/*    </Button>*/}
+            {/*</LogoutButton>*/}
 
         </div>
     );
