@@ -2,8 +2,14 @@ import React from 'react';
 import LogoImage from './logo';
 import NavigationLinks from './navigation-links';
 import LoginArea from './login';
+import NextAuth from "next-auth";
+import authConfig from "../auth.config";
+import {auth} from "../auth";
+import {UserButton} from "./auth/user-button";
 
-const Header = () => {
+const Header = async () => {
+    const session = await auth();
+
     return (
         <header className='flex flex-col w-full'>
             <section className='bg-slate-300 text-rose-500 w-full text-center flex gap-x-2 justify-center'>
@@ -16,7 +22,9 @@ const Header = () => {
                 justify-between
                 items-center
                 py-2
-                px-32
+                px-4
+                md:px-16
+                lg:px-32
                 bg-inherit
                 shadow-md
                 top-0
@@ -25,7 +33,12 @@ const Header = () => {
             >
                 <LogoImage/>
                 <NavigationLinks orientation='horizontal'/>
-                <LoginArea />
+                {session
+                    ?
+                    <UserButton/>
+                    :
+                    <LoginArea />
+                }
             </section>
         </header>
     );

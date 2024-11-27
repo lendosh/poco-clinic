@@ -1,9 +1,9 @@
 import React from 'react';
-import DoctorCardsList from '@/components/doctor-cards-list';
+import DoctorCardsList from "@/components/doctor-cards-list";
 
 const AboutPage = () => {
     return (
-        <main className='flex flex-col w-full gap-y-2 items-center'>
+        <main className='flex flex-col w-full gap-y-2 px-2 items-center'>
             <h1 className='
                             text-4xl 
                             text-center

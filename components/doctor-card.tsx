@@ -4,9 +4,13 @@ import Image from "next/image";
 import Link from "next/link";
 
 import {MailIcon, CalendarDays} from "lucide-react";
-import {Button} from "@/components/ui/button";
+import {Button} from "./ui/button";
 
-const DoctorCard = (data) => {
+interface DoctorCardProps {
+    doctor: any;
+}
+
+const DoctorCard = (data: DoctorCardProps) => {
     const {doctor} = data;
     return (
         <section
@@ -14,8 +18,9 @@ const DoctorCard = (data) => {
                         bg-swans-down-200
                         rounded-2xl
                         p-6 pb-4
-                        flex gap-x-8
+                        gap-x-8
                         w-full
+                        grid grid-cols-2
                     "
         >
             {doctor.imageUrl && (
@@ -25,7 +30,7 @@ const DoctorCard = (data) => {
                     src={doctor.imageUrl}
                     alt={doctor.name}
                     quality={100}
-                    className="rounded-md shadow-xl aspect-square w-fit border"
+                    className="rounded-md shadow-xl w-fit border"
                 />
             )}
             <div className="flex flex-col flex-grow text-swans-down-950">

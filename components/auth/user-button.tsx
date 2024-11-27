@@ -17,6 +17,7 @@ import {
 } from '@/components/ui/avatar';
 import {useCurrentUser} from '@/hooks/use-current-user';
 import {LogoutButton} from '@/components/auth/logout-button';
+import {Button} from "@/components/ui/button";
 
 export const UserButton = () => {
   const user = useCurrentUser();
@@ -33,8 +34,10 @@ export const UserButton = () => {
       <DropdownMenuContent className='w-40' align='end'>
         <LogoutButton>
           <DropdownMenuItem>
-            <ExitIcon className='h-4 w-4 mr-2'/>
-            Logout
+            <Button variant='destructive' size='sm' className='w-full'>
+              <ExitIcon className='h-4 w-4 mr-2'/>
+              Logout
+            </Button>
           </DropdownMenuItem>
         </LogoutButton>
       </DropdownMenuContent>

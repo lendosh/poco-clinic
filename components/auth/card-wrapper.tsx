@@ -26,7 +26,7 @@ export const CardWrapper = ({
                               backButtonHref
                             }: CardWrapperProps) => {
   return (
-    <Card className="w-[600px] shadow-md">
+    <Card className="min-w-[450px] max-w-[600px] w-full shadow-md">
       <CardHeader>
         <Header mainLabel={mainHeaderLabel} secondaryLabel={secondaryHeaderLabel}/>
       </CardHeader>
